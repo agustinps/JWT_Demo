@@ -33,4 +33,4 @@ Finalmente creamos dos controladores, uno para recibir la petición de login "Lo
 	  en nuestro caso no tendremos acceso a pesar de estar autenticado con usuario y contraseña.
 
 
-Según la funcionalidad deseada, si el token caduca, podemos enviar al cliente a la pagina de logín, o podemos generar un nuevo token (RefreshToken) en cada petición, para ampliar la caducidad y enviarlo en al respuesta.
+Según la funcionalidad deseada, si el token caduca, podemos enviar al cliente a la pagina de login, o podemos generar un nuevo token (RefreshToken) en cada petición, para ampliar la caducidad y enviarlo en al respuesta.
