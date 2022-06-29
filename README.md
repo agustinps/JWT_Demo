@@ -2,14 +2,15 @@
 
 ## Demostración de uso de JSon Web Token para autenticación y autorización
 
-JWT nos permite de forma segura trasmitir datos entre dos partes en forma de un objeto JSON. Es un estandar abierto donde la información está cifrada, verificada y se confía en ella 
-y es un mecanisto muy estendido para la autenticación web. un JWT tiene tres partes :
+JWT nos permite de forma segura trasmitir datos entre dos partes en forma de un objeto JSON. Es un estandar abierto donde la información está cifrada, verificada y se confía en ella y es un mecanisto muy estendido para la autenticación web. un JWT tiene tres partes :
 
 	1 Cabecera, que está cifrada en base 64 e incluye el algoritmo de cifrado y el tipo de token usado.
 	
-	2 Payload (o carga útil), también codificado en base 64 y contiene atributos sobre el usuario. Nunca debemos incluir información confidencial porque no está encriptado.
+	2 Payload (o carga útil), también codificado en base 64 y contiene atributos sobre el usuario. 
+	  Nunca debemos incluir información confidencial porque no está encriptado.
 	
-	3 Firma, se utiliza para verificar si el token es válido, se genera combinando la cabecera y el payload y se basa en una clave secreta que sólo el servidor debe conocer.
+	3 Firma, se utiliza para verificar si el token es válido, se genera combinando la cabecera y el payload 
+	  y se basa en una clave secreta que sólo el servidor debe conocer.
 	
 En primer lugar creamos el método de extensión AddJWTValidation dentro de la clase ServiceExtensions para tener un código más legible en nuestra clase program, donde posteriormente añadimos este método.
 
