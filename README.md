@@ -16,9 +16,9 @@ En primer lugar creamos el método de extensión AddJWTValidation dentro de la c
 
 Creamos una clase AuthenticationService donde generamos el token en el supuesto de que las credenciales del usuario sean correctas, en nuestro caso y puesto que es una simulación, siempre lo serán.
 
-Finalmente creamos dos controladores, uno para recibir la petición de login "LoginController", que llamrá a nuestra clase anterior y nos devolverá el token y otro "TestAuthorizationController" que utilizaremos para hacer pruebas :
+Finalmente creamos dos controladores, uno para recibir la petición de login "LoginController", que llamará a nuestra clase anterior y nos devolverá el token y otro "TestAuthorizationController" que utilizaremos para hacer pruebas :
 
-	1 AuthenticationFree, no requiere estar autenticado, es decir, acceso anonimo, que podría estar identificado 
+	1 AuthenticationFree, no requiere estar autenticado, es decir, acceso anónimo, que podría estar identificado 
 	  con el atributo [AllowAnonymous].	
 	  
 	2 AuthenticationRequired, necesita estar autenticado.	
